@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings & Enquiry | Crown & Glory Hair Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Crown & Glory</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services & Gallery</a></li>
+                <li><a href="enquiry.html" class="active">Bookings</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="text-align: center;">Appointment & Waitlist Form</h2>
+        <p style="text-align: center; margin-bottom: 1.5rem;">Select your requested date. Daily slots are capped at 5 clients per day. Submit this form to join our waiting list if full.</p>
+
+        <form action="#" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="braids">Knotless Braids</option>
+                <option value="wig">Wig Installation</option>
+                <option value="wash">Wash & Treatment</option>
+            </select>
+
+            <label for="booking-date">Preferred Date:</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+
+            <label for="status">Request Type:</label>
+            <select id="status" name="status">
+                <option value="standard">Standard Appointment Request</option>
+                <option value="waitlist">Join Waitlist (If Fully Booked)</option>
+            </select>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Let us know your preferred time or specific requests..."></textarea>
+
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Crown & Glory Hair Studio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
